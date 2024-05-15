@@ -29,7 +29,7 @@ Cypress.Commands.add("verifyErrorMessage", (possibleErrorMessages) => {
       expect(true, "No error message displayed").to.be.true;
     }
   });
-  cy.wait(Math.random() * 2000 + 1000);
+  cy.wait(Math.random() * 4000 + 1000);
 });
 
 Cypress.Commands.add("apiRequest", ({ method, url, auth, body }) => {
@@ -53,3 +53,8 @@ Cypress.Commands.add("apiRequest", ({ method, url, auth, body }) => {
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+// const faker = require('faker');
+// Cypress.Commands.add('generateRandomEmail', () => {
+//   return faker.internet.email();
+// });

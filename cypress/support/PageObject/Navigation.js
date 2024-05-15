@@ -48,6 +48,13 @@ class Navigation {
   getSubmit() {
     return "#form-validate > .actions-toolbar > div.primary > .action";
   }
+
+  getSignUp(){
+    return ".panel > .header > :nth-child(3) > a";
+  }
+
+
+
 }
 
 export default new Navigation();
