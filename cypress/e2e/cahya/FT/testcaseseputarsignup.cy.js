@@ -1,5 +1,6 @@
 const { should } = require("chai");
 
+
 import userdata from "../../../../cypress/fixtures/data/userData.json";
 import account from "../../../../cypress/fixtures/data/account.json";
 import message from "../../../../cypress/fixtures/data/messageData.json";
@@ -74,7 +75,7 @@ describe('template spec', () => {
     cy.get(submit).click();
     cy.get('#password-error').should('be.visible').should('contain',message.password2);
     cy.get('#password-confirmation-error').should('be.visible').should('contain',message.passwordConfirmError);
-    cy.clearAllCookies;
+    //cy.clearAllCookies;
   })  
 
 
