@@ -1,10 +1,10 @@
 const { should } = require("chai");
 
 
-import userdata from "../../../../cypress/fixtures/data/userData.json";
-import account from "../../../../cypress/fixtures/data/account.json";
-import message from "../../../../cypress/fixtures/data/messageData.json";
-import Navigation from "../../../../cypress/support/PageObject/Navigation";
+import userdata from "../../../../fixtures/data/userData.json";
+import account from "../../../../fixtures/data/account.json";
+import message from "../../../../fixtures/data/messageData.json";
+import Navigation from "../../../../support/PageObject/Navigation";
 
 const emailrandom = `coba${Math.floor(Math.random()*10000)}@wolololo.com`;
 const submit = Navigation.getSubmit();
